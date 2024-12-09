@@ -18,7 +18,7 @@ header img {
 nav {
     background-color: #D9D9D9;
     display: flex;
-    height: 10vh;
+    height: 12vh;
     margin: auto;
     position: sticky;
     top: 0;
@@ -159,4 +159,30 @@ a:visited {
 
 a:hover {
     opacity: 50%;
+}
+
+@media (max-width: 992px) {
+    .main-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-wrapper {
+        flex-direction: column;
+        margin-bottom: 14vh;
+    }
+
+    .description-wrapper {
+        height: 30vh;
+    }
 }
