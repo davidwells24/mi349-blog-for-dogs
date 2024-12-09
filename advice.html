@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs for Dogs</title>
@@ -8,39 +9,90 @@
 <body>
     <header>
         <div class="header-wrapper">
-            <img>
-            <img>
-            <img>
-            <img>
-            <img>
-            <img>
-            <img>
-            <img>
+            <img src="images/corgi.jpg" alt="Image of a corgi posing for the camera." loading="lazy">
+            <img src="images/puppy.jpg" alt="Image of a puppy playing in the grass." loading="lazy">
+            <img src="images/golden-retriever.jpg" alt="Image of a golden retriever laying down outside." loading="lazy">
+            <img src="images/german-shepherd.jpg" alt="Image of a german shepherd laying down in the grass." loading="lazy">
+            <img src="images/brown-lab.jpg" alt="Image of a brown lab standing outside." loading="lazy">
+            <img src="images/husky-puppy.jpeg" alt="Image of a husky puppy playing outside." loading="lazy">
+            <img src="images/bulldog.jpeg" alt="Image of a bulldog laying down down in the grass." loading="lazy">
+            <img src="images/terrior.jpg" alt="Image of a terrior standing outside." loading="lazy">
         </div>
     </header>
-    <section class="nav-wrapper">
-        <h1>
-            Blogs for Dogs
-        </h1>
+    <nav>
         <ul>
             <li>
-                Home
+                <h1 class="website-name">
+                    Blogs for Dogs
+                </h1>
             </li>
             <li>
-                Advice
+                <a title="Homepage" href="/index.html">Home</a>
             </li>
             <li>
-                About
+                <a title="Advice Page" href="/advice.html"><u>Advice</u></a>
             </li>
             <li>
-                Login/Create Account
+                <a title="About Page" href="/about.html">About</a>
             </li>
         </ul>
+    </nav>
+    <section class="advice-page">
+        <h2>
+            Ask for Advice
+        </h2>
+        <form name="advice" method="post" action="/" netlify>
+            <div id="form-wrapper">
+                <p class="box">
+                    <label for="blog-name">
+                        Blog Name:
+                    </label>
+                    <input type="text" name="blog-name" id="blog-name" placeholder="blogname123">
+                </p>
+                <p class="box">
+                    <label for="reason">
+                        Reason for Advice:
+                    </label>
+                    <select name="reason" id="reason">
+                        <option>
+                            Nutrition Question
+                        </option>
+                        <option>
+                            Health Question
+                        </option>
+                        <option>
+                            Behavior Question
+                        </option>
+                        <option>
+                            General Dog Question
+                        </option>
+                    </select>
+                </p>
+                <p class="box">
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input type="email" name="email" placeholder="user@example.com">
+                </p>
+                <p class="box">
+                    <label for="question">
+                        Question(s):
+                    </label>
+                    <textarea cols="30" rows="8" name="question" id="question">
+                    </textarea>
+                </p>
+                <p class="box">
+                    <input type="submit">
+                </p>
+            </div>
+        </form>
     </section>
-    <footer>
-        <h3>
-            &copy; Copyright Blogs for Dogs
-        </h3>
+    <footer class="advice-and-about-footer">
+        <div>
+            <h4>
+                &copy; Copyright Blogs for Dogs
+            </h4>
+        </div>
     </footer>
 </body>
 </html>
